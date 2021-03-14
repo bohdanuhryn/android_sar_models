@@ -8,11 +8,11 @@ import com.bohdanuhryn.sar.models.base.ModelTest
 
 fun main(args: Array<String>) {
     //solveTestModel()
-    //solveUserBehaviorWithRejuvenationModel()
-    //solveMobileDeviceWithRejuvenationModel()
+    solveUserBehaviorWithRejuvenationModel()
+    solveMobileDeviceWithRejuvenationModel()
 
     testUserBehaviorWithRejuvenationModel()
-    //testMobileDeviceWithRejuvenationModel()
+    testMobileDeviceWithRejuvenationModel()
 }
 
 fun solveTestModel() {
@@ -34,23 +34,36 @@ fun solveTestModel() {
     model.solve(
         initialTime = 0.0,
         intervalTime = 1.0,
-        maxTime = 500.0
+        maxTime = 5000.0
     )
     model.save()
 }
 
 fun solveMobileDeviceWithRejuvenationModel() {
     val model: Model = MobileDeviceWithRejuvenationModel(
-        lamAS = 0.3,
-        lamSA = 0.7,
-        lamYO = 0.0025,
-        lamORe = 0.0025,
-        lamReY = 15.0,
-        lamRY = 15.0,
-        lamYR = 0.018,
-        lamSpLp = 0.036,
-        lamLpSp = 1.0,
-        lamLpOp = 0.25,
+        /*lamAS = 0.25,// after 4 hours
+        lamSA = 0.143,// after 7 hours
+        lamYR = 0.125,// after 8 hours
+        lamYO = 0.01,// after 100 hours
+        lamORe = 0.01,// after 100 hours
+        lamReY = 60.0,// after 1 minute
+        lamRY = 60.0,// after 1 minute*/
+
+        lamAS = 0.00417,// after 4 hours
+        lamSA = 0.00238,// after 7 hours
+        lamYR = 0.00208,// after 8 hours
+        lamYO = 0.00017,// after 100 hours
+        lamORe = 0.00017,// after 100 hours
+        lamReY = 1.0,// after 1 minute
+        lamRY = 1.0,// after 1 minute
+
+        /*lamSpLp = 0.042,// after 24 hours
+        lamLpSp = 0.5,// after 2 hours
+        lamLpOp = 1.0,// after 1 hour*/
+
+        lamSpLp = 0.0007,// after 24 hours
+        lamLpSp = 0.0083,// after 2 hours
+        lamLpOp = 0.017,// after 1 hour
 
         initialSYSp = 1.0,
         initialAOSp = 0.0,
@@ -68,25 +81,35 @@ fun solveMobileDeviceWithRejuvenationModel() {
         initialAReLp = 0.0,
         initialAYLp = 0.0,
         initialSReLp = 0.0,
-        initialRSLp = 0.0
+        initialRSLp = 0.0,
+
+        initialOp = 0.0
     )
     model.solve(
         initialTime = 0.0,
         intervalTime = 1.0,
-        maxTime = 500.0
+        maxTime = 3000.0
     )
     model.save()
 }
 
 fun solveUserBehaviorWithRejuvenationModel() {
     val model: Model = UserBehaviorWithRejuvenationModel(
-        lamAS = { x -> 0.3 },
-        lamSA = { x -> 0.7 },
-        lamYR = 0.125,
-        lamYO = 0.0025,
-        lamORe = 0.0025,
-        lamReY = 15.0,
-        lamRY = 15.0,
+        /*lamAS = 0.25,// after 4 hours
+        lamSA = 0.143,// after 7 hours
+        lamYR = 0.125,// after 8 hours
+        lamYO = 0.01,// after 100 hours
+        lamORe = 0.01,// after 100 hours
+        lamReY = 60.0,// after 1 minute
+        lamRY = 60.0,// after 1 minute*/
+
+        lamAS = 0.00417,// after 4 hours
+        lamSA = 0.00238,// after 7 hours
+        lamYR = 0.00208,// after 8 hours
+        lamYO = 0.00017,// after 100 hours
+        lamORe = 0.00017,// after 100 hours
+        lamReY = 1.0,// after 1 minute
+        lamRY = 1.0,// after 1 minute
 
         initialSY = 1.0,
         initialAO = 0.0,
@@ -100,7 +123,7 @@ fun solveUserBehaviorWithRejuvenationModel() {
     model.solve(
         initialTime = 0.0,
         intervalTime = 1.0,
-        maxTime = 500.0
+        maxTime = 3000.0
     )
     model.save()
 }
@@ -108,23 +131,25 @@ fun solveUserBehaviorWithRejuvenationModel() {
 fun testUserBehaviorWithRejuvenationModel() {
     val test = ModelTest(
         initialTime = 0.0,
-        maxTime = 600.0,
+        maxTime = 3000.0,
         intervalTime = 1.0
     )
-    val results = test.test { lambdaYR, lambdaYO -> UserBehaviorWithRejuvenationModel(
-        lamAS = { x -> 0.3
-            /*val h = x.times(15).div(60) % 24
-            if (h in 9.0..22.0) 0.3 else 0.4*/
-        },
-        lamSA = { x -> 0.7
-            /*val h = x.times(15).div(60) % 24
-            if (h in 9.0..22.0) 0.7 else 0.6*/
-        },
-        lamYR = lambdaYR,
-        lamYO = lambdaYO,/*0.0025,*/
-        lamORe = lambdaYO,/*0.0025,*/
-        lamReY = 15.0,
-        lamRY = 15.0,
+    val results = test.test { lambdaYR -> UserBehaviorWithRejuvenationModel(
+        /*lamAS = 0.25,// after 4 hours
+        lamSA = 0.143,// after 7 hours
+        lamYR = lambdaYR,// after 8 hours
+        lamYO = 0.01,// after 100 hours
+        lamORe = 0.01,// after 100 hours
+        lamReY = 60.0,// after 1 minute
+        lamRY = 60.0,// after 1 minute*/
+
+        lamAS = 0.00417,// after 4 hours
+        lamSA = 0.00238,// after 7 hours
+        lamYR = lambdaYR,// after 8 hours
+        lamYO = 0.00017,// after 100 hours
+        lamORe = 0.00017,// after 100 hours
+        lamReY = 1.0,// after 1 minute
+        lamRY = 1.0,// after 1 minute
 
         initialSY = 1.0,
         initialAO = 0.0,
@@ -141,21 +166,33 @@ fun testUserBehaviorWithRejuvenationModel() {
 fun testMobileDeviceWithRejuvenationModel() {
     val test = ModelTest(
         initialTime = 0.0,
-        maxTime = 400.0,
+        maxTime = 3000.0,
         intervalTime = 1.0
     )
-    val results = test.test { lambdaYR, lambdaYO -> MobileDeviceWithRejuvenationModel(
-        lamAS = 0.3,
-        lamSA = 0.7,
-        lamYO = lambdaYO,//0.0025,
-        lamORe = lambdaYO,//0.0025,
-        lamReY = 15.0,
-        lamRY = 15.0,
-        lamYR = lambdaYR,
+    val results = test.test { lambdaYR -> MobileDeviceWithRejuvenationModel(
+        /*lamAS = 0.25,// after 4 hours
+        lamSA = 0.143,// after 7 hours
+        lamYR = lambdaYR,// after 8 hours
+        lamYO = 0.01,// after 100 hours
+        lamORe = 0.01,// after 100 hours
+        lamReY = 60.0,// after 1 minute
+        lamRY = 60.0,// after 1 minute*/
 
-        lamSpLp = 0.036,
-        lamLpSp = 1.0,
-        lamLpOp = 0.25,
+        lamAS = 0.00417,// after 4 hours
+        lamSA = 0.00238,// after 7 hours
+        lamYR = lambdaYR,// after 8 hours
+        lamYO = 0.00017,// after 100 hours
+        lamORe = 0.00017,// after 100 hours
+        lamReY = 1.0,// after 1 minute
+        lamRY = 1.0,// after 1 minute
+
+        /*lamSpLp = 0.042,// after 24 hours
+        lamLpSp = 0.5,// after 2 hours
+        lamLpOp = 1.0,// after 1 hour*/
+
+        lamSpLp = 0.0007,// after 24 hours
+        lamLpSp = 0.0083,// after 2 hours
+        lamLpOp = 0.017,// after 1 hour
 
         initialSYSp = 1.0,
         initialAOSp = 0.0,
@@ -173,7 +210,9 @@ fun testMobileDeviceWithRejuvenationModel() {
         initialAReLp = 0.0,
         initialAYLp = 0.0,
         initialSReLp = 0.0,
-        initialRSLp = 0.0
+        initialRSLp = 0.0,
+
+        initialOp = 0.0
     ) }
     results.save()
 }

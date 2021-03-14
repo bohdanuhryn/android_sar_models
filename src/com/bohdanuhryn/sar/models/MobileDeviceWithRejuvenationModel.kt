@@ -2,6 +2,8 @@ package com.bohdanuhryn.sar.models
 
 import com.bohdanuhryn.sar.methods.RungeKuttaMethodFlanagan
 import com.bohdanuhryn.sar.methods.Method
+import com.bohdanuhryn.sar.methods.RungeKuttaMethod1
+import com.bohdanuhryn.sar.methods.RungeKuttaMethod2
 import com.bohdanuhryn.sar.models.base.Model
 import kotlin.math.exp
 
@@ -33,13 +35,16 @@ class MobileDeviceWithRejuvenationModel(
     val initialRALp: Double,
     val initialRSLp: Double,
     val initialAReLp: Double,
-    val initialSReLp: Double
+    val initialSReLp: Double,
+    val initialOp: Double
 ) : Model() {
 
     override fun method(): Method {
+        fun balance(p: List<Double>) = (1.0f - (p[0] + p[1] + p[2] + p[3] + p[4] + p[5] + p[6] + p[7] + p[8] + p[9]
+                + p[10] + p[11] + p[12] + p[13] + p[14] + p[15]))
         //return RungeKuttaMethod1(
-        //return RungeKuttaMethod2(
-        return RungeKuttaMethodFlanagan(
+        return RungeKuttaMethod2(
+        //return RungeKuttaMethodFlanagan(
             equations = listOf(
                 { x, p: List<Double> -> -(p[0] * (lamSA + lamYO + lamYR + lamSpLp)) + p[7] * lamReY + p[1] * lamAS + p[5] * lamRY + p[8] * lamLpSp },// SYSp
                 { x, p: List<Double> -> -(p[1] * (lamAS + lamYO + lamSpLp)) + p[0] * lamSA + p[6] * lamReY + p[4] * lamRY + p[9] * lamLpSp },// AYSp
@@ -57,7 +62,9 @@ class MobileDeviceWithRejuvenationModel(
                 { x, p: List<Double> -> -(p[12] * (lamRY + lamAS + lamLpSp + lamLpOp)) + p[13] * lamSA + p[4] * lamSpLp },// RALp
                 { x, p: List<Double> -> -(p[13] * (lamRY + lamSA + lamLpSp + lamLpOp)) + p[12] * lamAS + p[5] * lamSpLp },// RSLp
                 { x, p: List<Double> -> -(p[14] * (lamReY + lamAS + lamLpSp + lamLpOp)) + p[11] * lamORe + p[15] * lamSA + p[6] * lamSpLp },// AReLp
-                { x, p: List<Double> -> -(p[15] * (lamReY + lamSA + lamLpSp + lamLpOp)) + p[10] * lamORe + p[14] * lamAS + p[7] * lamSpLp }// SReLp
+                { x, p: List<Double> -> -(p[15] * (lamReY + lamSA + lamLpSp + lamLpOp)) + p[10] * lamORe + p[14] * lamAS + p[7] * lamSpLp },// SReLp
+
+                { x, p: List<Double> -> p[14] * lamLpOp + p[11] * lamLpOp + p[9] * lamLpOp + p[8] * lamLpOp + p[10] * lamLpOp + p[15] * lamLpOp + p[13] * lamLpOp + p[12] * lamLpOp }// Op
             )
         )
     }
@@ -79,7 +86,8 @@ class MobileDeviceWithRejuvenationModel(
             initialRALp, // 12
             initialRSLp, // 13
             initialAReLp, // 14
-            initialSReLp // 15
+            initialSReLp, // 15
+            initialOp // 16
         )
     }
 
@@ -100,7 +108,8 @@ class MobileDeviceWithRejuvenationModel(
             "RALp", // 12
             "RSLp", // 13
             "AReLp", // 14
-            "SReLp" // 15
+            "SReLp", // 15
+            "Op" // 16
         )
     }
 

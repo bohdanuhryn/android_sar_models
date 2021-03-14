@@ -2,6 +2,7 @@ package com.bohdanuhryn.sar.models
 
 import com.bohdanuhryn.sar.methods.Method
 import com.bohdanuhryn.sar.methods.RungeKuttaMethod1
+import com.bohdanuhryn.sar.methods.RungeKuttaMethodFlanagan
 import com.bohdanuhryn.sar.models.base.Model
 
 class TestModel(
@@ -21,7 +22,7 @@ class TestModel(
 ) : Model() {
 
     override fun method(): Method {
-        return RungeKuttaMethod1(
+        return RungeKuttaMethodFlanagan(
             equations = listOf(
                 { x, p: List<Double> -> -(hw1 + hw2 + sw2 + hw3 + sw3 + hw4 + hw5) * p[0] },// SY
                 { x, p: List<Double> -> (hw1) * p[0] - (hw2 + sw2 + hw3 + sw3 + hw4 + hw5) * p[1] },// AY

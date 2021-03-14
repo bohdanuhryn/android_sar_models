@@ -1,12 +1,11 @@
 package com.bohdanuhryn.sar.models
 
-import com.bohdanuhryn.sar.methods.RungeKuttaMethodFlanagan
-import com.bohdanuhryn.sar.methods.Method
+import com.bohdanuhryn.sar.methods.*
 import com.bohdanuhryn.sar.models.base.Model
 
 class UserBehaviorWithRejuvenationModel(
-    val lamSA: (x: Double) -> Double,
-    val lamAS: (x: Double) -> Double,
+    val lamSA: Double,
+    val lamAS: Double,
     val lamYO: Double,
     val lamORe: Double,
     val lamReY: Double,
@@ -24,18 +23,32 @@ class UserBehaviorWithRejuvenationModel(
 ) : Model() {
 
     override fun method(): Method {
+        // (1 - (p[0] + p[1] + p[2] + p[3] + p[4] + p[5] + p[6]))
+        fun balance(p: List<Double>) = (1.0f - (p[0] + p[1] + p[2] + p[3] + p[4] + p[5] + p[6]))
         //return RungeKuttaMethod1(
         //return RungeKuttaMethod2(
-        return RungeKuttaMethodFlanagan(
+        /*return RungeKuttaMethodFlanagan(
             equations = listOf(
-                { x, p: List<Double> -> -(p[0] * (lamSA(x) + lamYO + lamYR)) + (p[7] * lamReY) + (p[1] * lamAS(x)) + (p[5] * lamRY) },// SY
-                { x, p: List<Double> -> -(p[1] * (lamAS(x) + lamYO)) + (p[0] * lamSA(x)) + (p[6] * lamReY) + (p[4] * lamRY) },// AY
-                { x, p: List<Double> -> -(p[2] * (lamORe + lamSA(x))) + (p[0] * lamYO) + (p[3] * lamAS(x)) },// SO
-                { x, p: List<Double> -> -(p[3] * (lamORe + lamAS(x))) + (p[2] * lamSA(x)) + (p[1] * lamYO) },// AO
-                { x, p: List<Double> -> -(p[4] * (lamRY + lamAS(x))) + (p[5] * lamSA(x)) },// RA
-                { x, p: List<Double> -> -(p[5] * (lamRY + lamSA(x))) + (p[4] * lamAS(x)) + (p[0] * lamYR) },// RS
-                { x, p: List<Double> -> -(p[6] * (lamReY + lamAS(x))) + (p[3] * lamORe) + (p[7] * lamSA(x)) },// ARe
-                { x, p: List<Double> -> -(p[7] * (lamReY + lamSA(x))) + (p[2] * lamORe) + (p[6] * lamAS(x)) }// SRe
+                { x, p: List<Double> -> -(p[0] * (lamSA + lamYO + lamYR)) + (p[7] * lamReY) + (p[1] * lamAS) + (p[5] * lamRY) },// SY
+                { x, p: List<Double> -> -(p[1] * (lamAS + lamYO)) + (p[0] * lamSA) + (p[6] * lamReY) + (p[4] * lamRY) },// AY
+                { x, p: List<Double> -> -(p[2] * (lamORe + lamSA)) + (p[0] * lamYO) + (p[3] * lamAS) },// SO
+                { x, p: List<Double> -> -(p[3] * (lamORe + lamAS)) + (p[2] * lamSA) + (p[1] * lamYO) },// AO
+                { x, p: List<Double> -> -(p[4] * (lamRY + lamAS)) + (p[5] * lamSA) },// RA
+                { x, p: List<Double> -> -(p[5] * (lamRY + lamSA)) + (p[4] * lamAS) + (p[0] * lamYR) },// RS
+                { x, p: List<Double> -> -(p[6] * (lamReY + lamAS)) + (p[3] * lamORe) + (p[7] * lamSA) },// ARe
+                { x, p: List<Double> -> -(p[7] * (lamReY + lamSA)) + (p[2] * lamORe) + (p[6] * lamAS) }// SRe
+            )
+        )*/
+        return RungeKuttaMethodSymets(
+            arrayOf(
+                arrayOf((lamSA + lamYO + lamYR) * -1, lamAS, 0.0, 0.0, 0.0, lamRY, 0.0, lamReY),// SY
+                arrayOf(lamSA, (lamAS + lamYO) * -1, 0.0, 0.0, lamRY, 0.0, lamReY, 0.0),// AY
+                arrayOf(lamYO, 0.0, (lamORe + lamSA) * -1, lamAS, 0.0, 0.0, 0.0, 0.0),// SO
+                arrayOf(0.0, lamYO, lamSA, (lamORe + lamAS) * -1, 0.0, 0.0, 0.0, 0.0),// AO
+                arrayOf(0.0, 0.0, 0.0, 0.0, (lamRY + lamAS) * -1, lamSA, 0.0, 0.0),// RA
+                arrayOf(lamYR, 0.0, 0.0, 0.0, lamAS, (lamRY + lamSA) * -1, 0.0, 0.0),// RS
+                arrayOf(0.0, 0.0, 0.0, lamORe, 0.0, 0.0, (lamReY + lamAS) * -1, lamSA),// ARe
+                arrayOf(0.0, 0.0, lamORe, 0.0, 0.0, 0.0, lamAS, (lamReY + lamSA) * -1)// SRe
             )
         )
     }

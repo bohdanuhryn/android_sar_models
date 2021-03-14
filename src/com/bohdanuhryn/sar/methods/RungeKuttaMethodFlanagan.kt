@@ -18,11 +18,26 @@ class RungeKuttaMethodFlanagan(
             rk.setInitialValuesOfY(results.last().toDoubleArray())
             rk.setFinalValueOfX(x + deltaX)
             rk.setStepSize(deltaX)
-            //results.add(rk.fourthOrder(derivn).toList())
+            results.add(rk.fourthOrder(derivn).toList())
             //results.add(rk.cashKarp(derivn).toList())
-            results.add(rk.fehlberg(derivn).toList())
+            //results.add(rk.fehlberg(derivn).toList())
             x += deltaX
         }
+
+        /*rk.setInitialValueOfX(initialX)
+        rk.setStepSize(deltaX)
+        rk.setFinalValueOfX(maxX)
+        rk.setInitialValuesOfY(initialY.toDoubleArray())
+        val points: Int = ((maxX - initialX) / deltaX).toInt()
+        val res = rk.fourthOrder(derivn, points)
+        (0 until points).forEach { i ->
+            val r: ArrayList<Double> = arrayListOf()
+            equations.indices.forEach { j ->
+                r.add(res[j + 1][i])
+            }
+            results.add(r)
+        }*/
+
         return results
     }
 }
