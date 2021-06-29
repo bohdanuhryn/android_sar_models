@@ -49,8 +49,8 @@ fun solveMobileDeviceWithRejuvenationModel() {
         lamReY = 60.0,// after 1 minute
         lamRY = 60.0,// after 1 minute*/
 
-        lamAS = 0.00417,// after 4 hours
-        lamSA = 0.00238,// after 7 hours
+        lamAS = 0.05,// after 20 minutes
+        lamSA = 0.02,// after 50 minutes
         lamYR = 0.00208,// after 8 hours
         lamYO = 0.00017,// after 100 hours
         lamORe = 0.00017,// after 100 hours
@@ -88,7 +88,7 @@ fun solveMobileDeviceWithRejuvenationModel() {
     model.solve(
         initialTime = 0.0,
         intervalTime = 1.0,
-        maxTime = 3000.0
+        maxTime = 4320.0
     )
     model.save()
 }
@@ -103,8 +103,8 @@ fun solveUserBehaviorWithRejuvenationModel() {
         lamReY = 60.0,// after 1 minute
         lamRY = 60.0,// after 1 minute*/
 
-        lamAS = 0.00417,// after 4 hours
-        lamSA = 0.00238,// after 7 hours
+        lamAS = 0.05,// after 20 minutes
+        lamSA = 0.02,// after 50 minutes
         lamYR = 0.00208,// after 8 hours
         lamYO = 0.00017,// after 100 hours
         lamORe = 0.00017,// after 100 hours
@@ -123,7 +123,7 @@ fun solveUserBehaviorWithRejuvenationModel() {
     model.solve(
         initialTime = 0.0,
         intervalTime = 1.0,
-        maxTime = 3000.0
+        maxTime = 4320.0
     )
     model.save()
 }
@@ -131,7 +131,7 @@ fun solveUserBehaviorWithRejuvenationModel() {
 fun testUserBehaviorWithRejuvenationModel() {
     val test = ModelTest(
         initialTime = 0.0,
-        maxTime = 3000.0,
+        maxTime = 4320.0,
         intervalTime = 1.0
     )
     val results = test.test { lambdaYR -> UserBehaviorWithRejuvenationModel(
@@ -143,8 +143,8 @@ fun testUserBehaviorWithRejuvenationModel() {
         lamReY = 60.0,// after 1 minute
         lamRY = 60.0,// after 1 minute*/
 
-        lamAS = 0.00417,// after 4 hours
-        lamSA = 0.00238,// after 7 hours
+        lamAS = 0.05,// after 20 minutes
+        lamSA = 0.02,// after 50 minutes
         lamYR = lambdaYR,// after 8 hours
         lamYO = 0.00017,// after 100 hours
         lamORe = 0.00017,// after 100 hours
@@ -166,7 +166,7 @@ fun testUserBehaviorWithRejuvenationModel() {
 fun testMobileDeviceWithRejuvenationModel() {
     val test = ModelTest(
         initialTime = 0.0,
-        maxTime = 3000.0,
+        maxTime = 4320.0,
         intervalTime = 1.0
     )
     val results = test.test { lambdaYR -> MobileDeviceWithRejuvenationModel(
@@ -178,8 +178,8 @@ fun testMobileDeviceWithRejuvenationModel() {
         lamReY = 60.0,// after 1 minute
         lamRY = 60.0,// after 1 minute*/
 
-        lamAS = 0.00417,// after 4 hours
-        lamSA = 0.00238,// after 7 hours
+        lamAS = 0.05,// after 20 minutes
+        lamSA = 0.02,// after 50 minutes
         lamYR = lambdaYR,// after 8 hours
         lamYO = 0.00017,// after 100 hours
         lamORe = 0.00017,// after 100 hours

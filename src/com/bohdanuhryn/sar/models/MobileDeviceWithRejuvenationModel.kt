@@ -1,9 +1,6 @@
 package com.bohdanuhryn.sar.models
 
-import com.bohdanuhryn.sar.methods.RungeKuttaMethodFlanagan
-import com.bohdanuhryn.sar.methods.Method
-import com.bohdanuhryn.sar.methods.RungeKuttaMethod1
-import com.bohdanuhryn.sar.methods.RungeKuttaMethod2
+import com.bohdanuhryn.sar.methods.*
 import com.bohdanuhryn.sar.models.base.Model
 import kotlin.math.exp
 
@@ -42,7 +39,7 @@ class MobileDeviceWithRejuvenationModel(
     override fun method(): Method {
         fun balance(p: List<Double>) = (1.0f - (p[0] + p[1] + p[2] + p[3] + p[4] + p[5] + p[6] + p[7] + p[8] + p[9]
                 + p[10] + p[11] + p[12] + p[13] + p[14] + p[15]))
-        //return RungeKuttaMethod1(
+        /*//return RungeKuttaMethod1(
         return RungeKuttaMethod2(
         //return RungeKuttaMethodFlanagan(
             equations = listOf(
@@ -65,6 +62,29 @@ class MobileDeviceWithRejuvenationModel(
                 { x, p: List<Double> -> -(p[15] * (lamReY + lamSA + lamLpSp + lamLpOp)) + p[10] * lamORe + p[14] * lamAS + p[7] * lamSpLp },// SReLp
 
                 { x, p: List<Double> -> p[14] * lamLpOp + p[11] * lamLpOp + p[9] * lamLpOp + p[8] * lamLpOp + p[10] * lamLpOp + p[15] * lamLpOp + p[13] * lamLpOp + p[12] * lamLpOp }// Op
+            )
+        )*/
+        return RungeKuttaMethodSymets(
+            arrayOf(
+                arrayOf((lamSA + lamYO + lamYR + lamSpLp) * -1, lamAS, 0.0, 0.0, 0.0, lamRY, 0.0, lamReY, lamLpSp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),// SYSp
+                arrayOf(lamSA, (lamAS + lamYO + lamSpLp) * -1, 0.0, 0.0, lamRY, 0.0, lamReY, 0.0, 0.0, lamLpSp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),// AYSp
+                arrayOf(lamYO, 0.0, (lamORe + lamSA + lamSpLp) * -1, lamAS, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),// SOSp
+                arrayOf(0.0, lamYO, lamSA, (lamORe + lamAS + lamSpLp) * -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0, 0.0, 0.0, 0.0, 0.0),// AOSp
+                arrayOf(0.0, 0.0, 0.0, 0.0, (lamRY + lamAS + lamSpLp) * -1, lamSA, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0, 0.0, 0.0, 0.0),// RASp
+                arrayOf(lamYR, 0.0, 0.0, 0.0, lamAS, (lamRY + lamSA + lamSpLp) * -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0, 0.0, 0.0),// RSSp
+                arrayOf(0.0, 0.0, 0.0, lamORe, 0.0, 0.0, (lamReY + lamAS + lamSpLp) * -1, lamSA, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0, 0.0),// AReSp
+                arrayOf(0.0, 0.0, lamORe, 0.0, 0.0, 0.0, lamAS, (lamReY + lamSA + lamSpLp) * -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpSp, 0.0),// SReSp
+
+                arrayOf(lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, (lamSA + lamYO + lamLpSp + lamLpOp) * -1, lamAS, 0.0, 0.0, 0.0, lamRY, 0.0, lamReY, 0.0),// SYLp
+                arrayOf(0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamSA, (lamAS + lamYO + lamLpSp + lamLpOp) * -1, 0.0, 0.0, lamRY, 0.0, lamReY, 0.0, 0.0),// AYLp
+                arrayOf(0.0, 0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, lamYO, 0.0, (lamORe + lamSA + lamLpSp + lamLpOp) * -1, lamAS, 0.0, 0.0, 0.0, 0.0, 0.0),// SOLp
+                arrayOf(0.0, 0.0, 0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, lamYO, lamSA, (lamORe + lamAS + lamLpSp + lamLpOp) * -1, 0.0, 0.0, 0.0, 0.0, 0.0),// AOLp
+                arrayOf(0.0, 0.0, 0.0, 0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, (lamRY + lamAS + lamLpSp + lamLpOp) * -1, lamSA, 0.0, 0.0, 0.0),// RALp
+                arrayOf(0.0, 0.0, 0.0, 0.0, 0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamAS, (lamRY + lamSA + lamLpSp + lamLpOp) * -1, 0.0, 0.0, 0.0),// RSLp
+                arrayOf(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamSpLp, 0.0, 0.0, 0.0, 0.0, lamORe, 0.0, 0.0, (lamReY + lamAS + lamLpSp + lamLpOp) * -1, lamSA, 0.0),// AReLp
+                arrayOf(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamSpLp, 0.0, 0.0, lamORe, 0.0, 0.0, 0.0, lamAS, (lamReY + lamSA + lamLpSp + lamLpOp) * -1, 0.0),// SReLp
+
+                arrayOf(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, lamLpOp, lamLpOp, lamLpOp, lamLpOp, lamLpOp, lamLpOp, lamLpOp, lamLpOp, 0.0)// Op
             )
         )
     }

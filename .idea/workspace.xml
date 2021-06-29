@@ -2,69 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92ca02f-09cd-451d-a6b4-782b7870c041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/methods/RungeKuttaMethodSymets.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$solveUserBehaviorWithRejuvenationModel$model$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$solveUserBehaviorWithRejuvenationModel$model$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testMobileDeviceWithRejuvenationModel$results$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testMobileDeviceWithRejuvenationModel$results$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan$solve$derivn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan$solve$derivn$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$9.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel$method$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/TestModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel$method$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/TestModel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/TestModel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Bohdan-Bad.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Bohdan-Good.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Flanagan-Bad.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Flanagan-Good.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Rebirth-hours-10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Rebirth-hours-2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Rebirth-hours-2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Rebirth-hours-20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Rebirth-hours-5.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/methods/RungeKuttaMethodFlanagan.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/TestModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/TestModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/UserBehaviorWithRejuvenationModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/base/ModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/base/ModelTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +119,10 @@
       <workItem from="1606931155672" duration="11043000" />
       <workItem from="1613938820101" duration="2138000" />
       <workItem from="1613986543274" duration="40075000" />
-      <workItem from="1615674627051" duration="11171000" />
+      <workItem from="1615674627051" duration="18408000" />
+      <workItem from="1616357403008" duration="6456000" />
+      <workItem from="1617493138945" duration="59000" />
+      <workItem from="1624970424399" duration="594000" />
     </task>
     <servers />
   </component>
@@ -169,22 +138,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="160" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613986447645" />
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1615726402013">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1616375288178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615726402013" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1615726402013">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
+    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1616375288178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615726402013" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1615726402012">
+    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
+    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1616375288178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615726402012" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1615726402013">
+    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1616375288178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615726402013" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1615587964815">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
