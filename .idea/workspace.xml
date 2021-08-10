@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92ca02f-09cd-451d-a6b4-782b7870c041" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/EnhancedSoftwareAgingRejuvenationModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testMobileDeviceWithRejuvenationModel$results$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testMobileDeviceWithRejuvenationModel$results$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt$testUserBehaviorWithRejuvenationModel$results$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel$method$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sources/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/MobileDeviceWithRejuvenationModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -70,20 +46,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\methods" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.bohdanuhryn.sar.models.base" />
       <recent name="com.bohdanuhryn.sar.models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\core\methods" />
-      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\utils" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.bohdanuhryn.sar.methods" />
       <recent name="com.bohdanuhryn.sar.models" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\methods" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\core\methods" />
+      <recent name="D:\work\projects\_BohdanUhrynovskyi\PhD\sources\src\com\bohdanuhryn\sar\utils" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,7 +98,8 @@
       <workItem from="1615674627051" duration="18408000" />
       <workItem from="1616357403008" duration="6456000" />
       <workItem from="1617493138945" duration="59000" />
-      <workItem from="1624970424399" duration="594000" />
+      <workItem from="1624970424399" duration="1232000" />
+      <workItem from="1628513198683" duration="6419000" />
     </task>
     <servers />
   </component>
@@ -130,45 +107,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="470" height="466" key="DebuggerActiveHint" timestamp="1615503753896">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1628611489976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="470" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1615503753896" />
-    <state x="618" y="160" key="FileChooserDialogImpl" timestamp="1613986447645">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
+    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1628611489976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="618" y="160" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613986447645" />
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1616375288178">
+    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
+    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1628611489975">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1616375288178">
+    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628611489975" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1628611489976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1616375288178">
+    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
+    <state x="209" y="0" key="new project wizard" timestamp="1628606306818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1616375288178">
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1628606306818" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1628609057648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616375288178" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1615587964815">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615587964815" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1615587964814">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1615587964814" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1615587964814">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1615587964814" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1615587964814">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615587964814" />
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1628609057648" />
   </component>
 </project>

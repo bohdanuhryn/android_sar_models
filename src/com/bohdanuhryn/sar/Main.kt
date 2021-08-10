@@ -1,5 +1,6 @@
 package com.bohdanuhryn.sar
 
+import com.bohdanuhryn.sar.models.EnhancedSoftwareAgingRejuvenationModel
 import com.bohdanuhryn.sar.models.base.Model
 import com.bohdanuhryn.sar.models.MobileDeviceWithRejuvenationModel
 import com.bohdanuhryn.sar.models.TestModel
@@ -8,11 +9,12 @@ import com.bohdanuhryn.sar.models.base.ModelTest
 
 fun main(args: Array<String>) {
     //solveTestModel()
+    solveEnhancedSoftwareAgingRejuvenationModel()
     solveUserBehaviorWithRejuvenationModel()
     solveMobileDeviceWithRejuvenationModel()
 
-    testUserBehaviorWithRejuvenationModel()
-    testMobileDeviceWithRejuvenationModel()
+    //testUserBehaviorWithRejuvenationModel()
+    //testMobileDeviceWithRejuvenationModel()
 }
 
 fun solveTestModel() {
@@ -35,6 +37,30 @@ fun solveTestModel() {
         initialTime = 0.0,
         intervalTime = 1.0,
         maxTime = 5000.0
+    )
+    model.save()
+}
+
+fun solveEnhancedSoftwareAgingRejuvenationModel() {
+    val model: Model = EnhancedSoftwareAgingRejuvenationModel(
+        lamYA = 1.0 / (3.0 * 60.0),// after 20 minutes
+        lamAO = 1.0 / (6.0 * 60.0),// after 50 minutes
+        lamOAf = 1.0 / (3.0 * 60.0),// after 8 hours
+        lamAR = 1.0 / (12.0 * 60.0),// after 100 hours
+        lamOR = 1.0 / (6.0 * 60.0),// after 1 minute
+        lamAfY = 1.0,// after 1 minute
+        lamRY = 1.0,// after 1 minute
+
+        initialY = 1.0,
+        initialA = 0.0,
+        initialO = 0.0,
+        initialAf = 0.0,
+        initialR = 0.0
+    )
+    model.solve(
+        initialTime = 0.0,
+        intervalTime = 1.0,
+        maxTime = 1000.0
     )
     model.save()
 }
