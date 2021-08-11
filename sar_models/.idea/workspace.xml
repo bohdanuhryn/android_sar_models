@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92ca02f-09cd-451d-a6b4-782b7870c041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/models/EnhancedSoftwareAgingRejuvenationModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MobileDeviceWithRejuvenationModel-Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/UserBehaviorWithRejuvenationModel-Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bohdanuhryn/sar/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,7 @@
       <workItem from="1616357403008" duration="6456000" />
       <workItem from="1617493138945" duration="59000" />
       <workItem from="1624970424399" duration="1232000" />
-      <workItem from="1628513198683" duration="6419000" />
+      <workItem from="1628513198683" duration="7895000" />
     </task>
     <servers />
   </component>
@@ -107,22 +103,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1628611489976">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1628722554588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1628611489976">
+    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628722554588" />
+    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1628722554586">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1628611489975">
+    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628722554585" />
+    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1628722554575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628611489975" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1628611489976">
+    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628722554575" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1628722554587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628611489976" />
+    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628722554587" />
     <state x="209" y="0" key="new project wizard" timestamp="1628606306818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
